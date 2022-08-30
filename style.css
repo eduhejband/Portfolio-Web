@@ -1,0 +1,239 @@
+
+/* Menu responsivo - https://www.youtube.com/watch?v=bHRXRYTppHM */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: aqua;
+}
+
+body{
+
+    background-color: black;
+    height: 42vh;
+    display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    float: left;
+    list-style: none;
+}
+
+.nav-list li:hover {
+    background-color: #00ffff80;   
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #ffff;
+    margin: 8px;
+}
+
+@media(max-width: 725px){
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-list{
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #333333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+    }
+
+    .nav-list li{
+        margin: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Sticky header parar tornar o cabeçalho fixo - https://www.w3schools.com/howto/howto_js_sticky_header.asp */
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #333333;
+    height: 14vh;
+    overflow: hidden;  
+}
+
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+
+  /* Caixa de texto - https://github.com/eduhejband/VueQuasar/blob/master/Vue/Vue/src/pages/IndexPage.vue */
+.homeLayout{
+    display: flex;
+}
+
+.textBox{
+    display: inline-block;
+    align-items: flex-start;
+    background: transparent;
+    padding: 30px;
+    margin: 60px;
+    margin-left: 8%;
+    padding: 20px;
+    box-shadow: 4px 4px 16px 16px #00ffff80;  
+}
+
+.profissao{
+ 
+    text-transform: uppercase;
+    color: #ffffff;
+    font: 700 normal 1.2em 'tahoma';
+    letter-spacing: 3px;
+    padding: 30px;
+    margin-left: 3%;
+    text-transform: uppercase; 
+	white-space: nowrap;
+}
+
+.nome {
+    padding: 30px;
+    text-transform: uppercase;
+    color: #f7e7e7;
+    font: 700 normal 1.8em 'tahoma';
+    letter-spacing: 3px;
+    float: left;
+	white-space: nowrap; 
+    margin: 0 auto;
+    animation: 
+    typing 3s steps(40, end);
+	overflow-x: hidden;
+}
+
+@media(min-width:725px){
+    .textBox:hover{
+        transform: scale(1.1);
+    }
+}
+
+ @keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+/*Holograma da Terra - https://codepen.io/pedroo_andre/pen/KKZmNPK*/
+#earth {
+    margin-top: 30px;
+    margin-left: 40px;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: transparent url("https://i.imgur.com/Qk4UXcU.png");
+	background-size: cover;
+	box-shadow: inset 0px -20px 50px 10px #00ffff80,
+        0px 0px 30px 6px #00ffff70;
+	transform-style: preserve-3d;
+	transform: rotate(20deg);
+	animation: rotate 15s linear infinite;
+}
+
+#earth:hover{
+    transform: scale(1.1);
+
+}
+
+@keyframes rotate {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 530px 0;
+	}
+}
+
+/*Scroll bar e selection color - https://gabrielaguaru.github.io/*/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00d2df;
+    border-radius: 5px;
+}
+
+::selection {
+    background-color: rgb(51, 111, 164);
+}

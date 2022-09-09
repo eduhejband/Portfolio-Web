@@ -1,3 +1,5 @@
+<!-- https://www.w3schools.com/cssref/css3_pr_word-wrap.asp --> 
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -9,8 +11,8 @@
     </head>
 
     <body>
-
-        <!-- Menu responsivo - https://www.youtube.com/watch?v=bHRXRYTppHM -->
+       
+        <!-- Menu responsivo - https://www.youtube.com/watch?v=bHRXRYTppHM  -->
         <header>
             <nav id="navbar">
                 <a class="logo"> Master Codes</a>
@@ -22,36 +24,52 @@
                 </div>
 
                 <ul class="nav-list">
-                    <li><a href="/">Início</a></li>
-                    <li><a href="/">Sobre</a></li>
-                    <li><a href="/">Experiência</a></li>
-                    <li><a href="/">Projetos</a></li>
+                    <li><a class="nav-a" href="#home">Início</a></li>
+                    <li><a class="nav-a" href="/">Sobre</a></li>
+                    <li><a class="nav-a" href="/">Experiência</a></li>
+                    <li><a class="nav-a" href="/">Projetos</a></li>
                 </ul>
             </nav>
         </header>
         
          <!-- Corpo da aplicação-->
-
-        <br><br>
-        <div class="homeLayout">
-            
-            <div class="textBox">
-                <br>
-                <div>
-                    <span class="nome"> Eduardo H. Bandeira</span>
+        <section class="principal" id="home">
+            <br><br>
+            <div class="homeLayout">
+                <div class="textBox">
+                    <br>
+                    <div>
+                        <span class="nome"> Eduardo H. Bandeira</span>
+                    </div>
+                    <br><br><br>
+                    <div>
+                        <span class="profissao">Desenvolvedor Full Stack</span>
+                    </div>
                 </div>
-                <br><br><br>
-                <div>
-                    <span class="profissao">Desenvolvedor Full Stack</span>
-                </div>
+                <div id="earth"></div>
             </div>
-            <div id="earth"></div>
             
-        </div>
-        
-        <main></main>
-        <script src="mobile-navbar.js"></script>
-        
-    </body>
+            <!-- Botões da primeira tela-->
+            <div class="botoes">
+                <a class="botaoGit" href="https://github.com/eduhejband">
+                    <img class= "gitLogo" src="github.png" alt="">
+                    <p>Github</p></a>
+                    
+                <a class="botaoLink" href="https://www.linkedin.com/in/eduardohejazibandeira/">
+                    <img class= "linkLogo" src="linkedin.png" alt="">
+                    <p>Linkedln</p>
+                    </a>        
+            </div>
 
+            <!-- Scroll efeito-->
+            <div class="scroll">
+                <a href="#home">
+                    <p>Scroll Down</p>
+                    <img class="scrollLogo" src="scroll.png" alt="">  
+                </a>
+            </div>
+        </section>
+        <main></main>
+        <script src="script.js"></script>
+    </body>
 </html>

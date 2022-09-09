@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+   
 a{
     color: white;
     text-decoration: none;
@@ -16,8 +16,8 @@ a{
     text-decoration: none;
 }
 
-a:hover{
-    opacity: 0.7;
+.nav-a:hover{
+    color: #1b1b1b;
 }
 
 .logo{
@@ -27,13 +27,9 @@ a:hover{
     color: aqua;
 }
 
-body{
-
-    background-color: black;
-    height: 42vh;
-    display: block;
-	justify-content: center;
-	align-items: center;
+.logo:hover{
+    color: aqua;
+    opacity: 0.7;
 }
 
 .nav-list{
@@ -65,7 +61,7 @@ body{
     margin: 8px;
 }
 
-@media(max-width: 725px){
+@media(max-width: 900px){
 
     body{
         overflow-x: hidden;
@@ -77,7 +73,7 @@ body{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #333333;
+        background: #333333 !important;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -89,9 +85,15 @@ body{
         margin: 0;
         opacity: 0;
     }
+    
+    .logo{
+        display: inline-flex;
+    }
 
     .mobile-menu{
         display: block;
+        margin-left: 28%;
+        float: right;
     }
 
     .nav-list.active{
@@ -120,67 +122,95 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #333333;
     height: 14vh;
-    overflow: hidden;  
+    overflow: hidden; 
+    border-bottom: 2px solid #efeaea; 
 }
 
   .content {
     padding: 16px;
   }
   
-  .sticky {
+  header {
     position: fixed;
     top: 0;
     width: 100%;
+    
   }
   
-  .sticky + .content {
+  header + .content {
     padding-top: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
   }
 
-
+  
   /* Caixa de texto - https://github.com/eduhejband/VueQuasar/blob/master/Vue/Vue/src/pages/IndexPage.vue */
 .homeLayout{
     display: flex;
 }
 
+@media(max-width:900px){
+    .homeLayout{
+        flex-direction: column;
+        padding: 15% 0;
+        align-items: center;  
+    }
+}
+
+body{
+    background-color: black;
+	justify-content: center;
+	align-items: center;
+    overflow-x: hidden;
+}
+
 .textBox{
     display: inline-block;
-    align-items: flex-start;
+    align-items: center;
     background: transparent;
-    padding: 30px;
-    margin: 60px;
+    margin-top: 10%;
     margin-left: 8%;
-    padding: 20px;
-    box-shadow: 4px 4px 16px 16px #00ffff80;  
+    padding: 2%;
+    box-shadow: 4px 4px 16px 16px #00ffff80; 
+    height: 18vw; 
+    width: 46%;
+    overflow: hidden;
+}
+
+@media(max-width:600px){
+    .textBox{
+        height: 30vw;
+    }
 }
 
 .profissao{
- 
     text-transform: uppercase;
     color: #ffffff;
-    font: 700 normal 1.2em 'tahoma';
-    letter-spacing: 3px;
-    padding: 30px;
+    font: 700 normal 1.7vw 'tahoma';
+    letter-spacing: 0.3vw;
+    padding: 7%;
     margin-left: 3%;
     text-transform: uppercase; 
 	white-space: nowrap;
 }
 
 .nome {
-    padding: 30px;
+    padding-top: 4%;
+    padding-bottom: 7%;
     text-transform: uppercase;
     color: #f7e7e7;
-    font: 700 normal 1.8em 'tahoma';
-    letter-spacing: 3px;
+    font: 700 normal 2.5vw 'tahoma';
+    letter-spacing: 0.3vw;
     float: left;
 	white-space: nowrap; 
-    margin: 0 auto;
+    margin-left: 7%;
     animation: 
     typing 3s steps(40, end);
 	overflow-x: hidden;
 }
 
-@media(min-width:725px){
+@media(min-width:900px){
     .textBox:hover{
         transform: scale(1.1);
     }
@@ -193,8 +223,8 @@ body{
 
 /*Holograma da Terra - https://codepen.io/pedroo_andre/pen/KKZmNPK*/
 #earth {
-    margin-top: 30px;
-    margin-left: 40px;
+    margin-top: 8%;
+    margin-left: 11%;
 	position: relative;
 	width: 300px;
 	height: 300px;
@@ -210,7 +240,12 @@ body{
 
 #earth:hover{
     transform: scale(1.1);
+}
 
+@media(max-width:900px){
+    #earth{
+        display: none;
+    }
 }
 
 @keyframes rotate {
@@ -221,6 +256,128 @@ body{
 	100% {
 		background-position: 530px 0;
 	}
+}
+
+/*Botões da primeira tela - https://gabrielaguaru.github.io/*/
+.botoes{
+    display: flex;
+    align-items: center;
+}
+
+.botaoGit{
+    color: white;
+    text-decoration: none;
+    margin-left: 12%;
+    display: flex;
+    align-items: center;
+    padding: 0.3vw 0.1vw 0.5vw;
+    justify-content: space-evenly;
+    width: 15vw;
+    border: 0.2vw solid aqua;
+    border-radius: 0.8vw;
+    position: relative;
+    background:transparent;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 1.5vw;
+    letter-spacing: 0.3vw;
+    height: 4.7vw;
+    margin-top: -2%;
+}
+
+@media(max-width:900px){
+    .botaoGit{
+        margin-left: 35%;
+    }
+}
+
+.botaoLink{
+    color: white;
+    text-decoration: none;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    padding: 0.3vw 0.1vw 0.5vw;
+    justify-content: space-evenly;
+    width: 15vw;
+    border: 0.2vw solid aqua;
+    border-radius: 0.8vw;
+    position: relative;
+    background:transparent;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 1.5vw;
+    letter-spacing:0.3vw;
+    height: 4.7vw;
+    margin-top: -2%;
+}
+
+.botaoGit:hover{
+    background: linear-gradient( -45deg, rgba(147, 88, 247, 1), rgb(3, 95, 100) );
+    background-size: 400%;
+    animation: move infinite forwards 4s;
+}
+
+.botaoLink:hover{
+    background: linear-gradient( -45deg, rgba(147, 88, 247, 1), rgb(3, 95, 100) );
+    background-size: 400%;
+    animation: move infinite forwards 4s;
+}
+
+.gitLogo{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.linkLogo{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+p {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-block-start: 1vw;
+    margin-block-end: 1vw;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*Scroll efeito - https://gabrielaguaru.github.io/*/
+.scroll{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 45%;
+    font-weight: bold;
+    font-size: 1.58vw;
+    letter-spacing: 0.19vw;
+}
+
+@media(max-width:900px){
+    .scroll{
+        margin-left: 47%;
+    }
+}
+
+.scrollLogo{
+    animation: scroll-down 1s infinite forwards;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -15px, 0);
+    }
+    30% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 10px, 0);
+    }
 }
 
 /*Scroll bar e selection color - https://gabrielaguaru.github.io/*/

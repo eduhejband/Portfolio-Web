@@ -1,4 +1,5 @@
 
+
 /* Menu responsivo - https://www.youtube.com/watch?v=bHRXRYTppHM */
 *{
     margin: 0;
@@ -69,7 +70,7 @@ a{
     
     .nav-list{
         position: absolute;
-        top: 14vh;
+        top: 71px;
         right: 0;
         width: 50vw;
         height: 92vh;
@@ -79,6 +80,7 @@ a{
         justify-content: space-around;
         transform: translateX(100%);
         transition: 0.3s ease-in;
+        overflow: hidden;
     }
 
     .nav-list li{
@@ -121,7 +123,7 @@ a{
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #333333;
-    height: 14vh;
+    height: 71px;
     overflow: hidden; 
     border-bottom: 2px solid #efeaea; 
 }
@@ -134,7 +136,7 @@ a{
     position: fixed;
     top: 0;
     width: 100%;
-    
+    z-index: 9; 
   }
   
   header + .content {
@@ -145,7 +147,17 @@ a{
   }
 
   
-  /* Caixa de texto - https://github.com/eduhejband/VueQuasar/blob/master/Vue/Vue/src/pages/IndexPage.vue */
+  /* Primeira página - https://github.com/eduhejband/VueQuasar/blob/master/Vue/Vue/src/pages/IndexPage.vue */
+#home{
+    height: 120vh
+}
+
+@media(max-width:900px){
+    #home{
+        height:150vh;
+    }
+}
+
 .homeLayout{
     display: flex;
 }
@@ -159,23 +171,27 @@ a{
 }
 
 body{
-    background-color: black;
 	justify-content: center;
 	align-items: center;
     overflow-x: hidden;
+    background-color: black;
 }
 
 .textBox{
     display: inline-block;
     align-items: center;
     background: transparent;
-    margin-top: 10%;
-    margin-left: 8%;
-    padding: 2%;
+    margin-top: 10vw;
+    margin-left: 8vw;
+    padding: 2vw;
     box-shadow: 4px 4px 16px 16px #00ffff80; 
     height: 18vw; 
-    width: 46%;
+    width: 46vw;
     overflow: hidden;
+}
+
+.textBox:hover{
+    transform: scale(1.1);
 }
 
 @media(max-width:600px){
@@ -208,12 +224,6 @@ body{
     animation: 
     typing 3s steps(40, end);
 	overflow-x: hidden;
-}
-
-@media(min-width:900px){
-    .textBox:hover{
-        transform: scale(1.1);
-    }
 }
 
  @keyframes typing {
@@ -267,7 +277,7 @@ body{
 .botaoGit{
     color: white;
     text-decoration: none;
-    margin-left: 12%;
+    margin-left: 11.7vw;
     display: flex;
     align-items: center;
     padding: 0.3vw 0.1vw 0.5vw;
@@ -282,19 +292,19 @@ body{
     font-size: 1.5vw;
     letter-spacing: 0.3vw;
     height: 4.7vw;
-    margin-top: -2%;
+    margin-top: -2vw;
 }
 
 @media(max-width:900px){
     .botaoGit{
-        margin-left: 35%;
+        margin-left: 35vw;
     }
 }
 
 .botaoLink{
     color: white;
     text-decoration: none;
-    margin-left: 8%;
+    margin-left: 8vw;
     display: flex;
     align-items: center;
     padding: 0.3vw 0.1vw 0.5vw;
@@ -309,7 +319,7 @@ body{
     font-size: 1.5vw;
     letter-spacing:0.3vw;
     height: 4.7vw;
-    margin-top: -2%;
+    margin-top: -2vw;
 }
 
 .botaoGit:hover{
@@ -346,8 +356,8 @@ p {
 /*Scroll efeito - https://gabrielaguaru.github.io/*/
 .scroll{
     position: absolute;
-    margin-top: 5%;
-    margin-left: 45%;
+    margin-top: 5vw;
+    margin-left: 45vw;
     font-weight: bold;
     font-size: 1.58vw;
     letter-spacing: 0.19vw;
@@ -355,7 +365,7 @@ p {
 
 @media(max-width:900px){
     .scroll{
-        margin-left: 47%;
+        margin-left: 47vw;
     }
 }
 

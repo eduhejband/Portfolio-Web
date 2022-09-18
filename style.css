@@ -1,5 +1,4 @@
 
-
 /* Menu responsivo - https://www.youtube.com/watch?v=bHRXRYTppHM */
 *{
     margin: 0;
@@ -149,17 +148,13 @@ a{
   
   /* Primeira página - https://github.com/eduhejband/VueQuasar/blob/master/Vue/Vue/src/pages/IndexPage.vue */
 #home{
-    height: 120vh
-}
-
-@media(max-width:900px){
-    #home{
-        height:150vh;
-    }
+    height: 700px;
 }
 
 .homeLayout{
     display: flex;
+    word-wrap: break-word;
+    z-index: 5;
 }
 
 @media(max-width:900px){
@@ -185,51 +180,81 @@ body{
     margin-left: 8vw;
     padding: 2vw;
     box-shadow: 4px 4px 16px 16px #00ffff80; 
-    height: 18vw; 
-    width: 46vw;
-    overflow: hidden;
+    height: 190px; 
+    width: 510px;
+    overflow: hidden;   
 }
 
 .textBox:hover{
     transform: scale(1.1);
 }
 
-@media(max-width:600px){
-    .textBox{
-        height: 30vw;
-    }
+.nome {
+    display: inline;
+    text-transform: uppercase;
+    color: #f7e7e7;
+    font: 700 normal 26.5px 'tahoma'; 
+    letter-spacing: 3.3px;
+    margin-left: 45px;
+    line-height: 90px;
+    animation: 
+    typing 5s steps(40, end);
 }
 
 .profissao{
+    display: inline;
     text-transform: uppercase;
     color: #ffffff;
-    font: 700 normal 1.7vw 'tahoma';
-    letter-spacing: 0.3vw;
-    padding: 7%;
-    margin-left: 3%;
+    font: 700 normal 18px 'tahoma';
+    letter-spacing: 3.3px;
+    margin-left: 50px;
     text-transform: uppercase; 
-	white-space: nowrap;
-}
-
-.nome {
-    padding-top: 4%;
-    padding-bottom: 7%;
-    text-transform: uppercase;
-    color: #f7e7e7;
-    font: 700 normal 2.5vw 'tahoma';
-    letter-spacing: 0.3vw;
-    float: left;
-	white-space: nowrap; 
-    margin-left: 7%;
-    animation: 
-    typing 3s steps(40, end);
-	overflow-x: hidden;
 }
 
  @keyframes typing {
   from { width: 0% }
   to { width: 100% }
 }
+
+@media(max-width:900px){
+    .textBox{
+        height: 190px; 
+        width: 300px; 
+    }
+
+    .nome{
+        font: 700 normal 13px 'tahoma';
+        margin-left: 27px;
+        line-height: 90px;
+    }
+
+    .profissao{
+        font: 700 normal 10px 'tahoma';
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:300px){
+    .textBox{
+        height: 190px; 
+        width: 70vw; 
+        align-items: center;
+    }
+
+    .nome{
+        font: 700 normal 4vw 'tahoma';
+        letter-spacing: 0.3vw;
+        margin-left: 6vw;
+        line-height: 40vw;
+    }
+
+    .profissao{
+        font: 700 normal 3.5vw 'tahoma';
+        letter-spacing: 0.3vw;
+        margin-left: 3vw;
+    }
+}
+
 
 /*Holograma da Terra - https://codepen.io/pedroo_andre/pen/KKZmNPK*/
 #earth {
@@ -277,49 +302,125 @@ body{
 .botaoGit{
     color: white;
     text-decoration: none;
-    margin-left: 11.7vw;
+    margin-left: 128px;
     display: flex;
     align-items: center;
-    padding: 0.3vw 0.1vw 0.5vw;
+    padding: 3px 5px 5px;
     justify-content: space-evenly;
-    width: 15vw;
+    width: 170px;
     border: 0.2vw solid aqua;
-    border-radius: 0.8vw;
+    border-radius: 8px;
     position: relative;
     background:transparent;
     transition: 0.3s;
     font-weight: 600;
-    font-size: 1.5vw;
-    letter-spacing: 0.3vw;
-    height: 4.7vw;
-    margin-top: -2vw;
-}
-
-@media(max-width:900px){
-    .botaoGit{
-        margin-left: 35vw;
-    }
+    font-size: 1rem;
+    letter-spacing: 3.3px;
+    height: 52px;
+    margin-top: -20px;
 }
 
 .botaoLink{
     color: white;
     text-decoration: none;
-    margin-left: 8vw;
+    margin-left: 88px;
     display: flex;
     align-items: center;
-    padding: 0.3vw 0.1vw 0.5vw;
+    padding: 3px 5px 5px;
     justify-content: space-evenly;
-    width: 15vw;
+    width: 170px;
     border: 0.2vw solid aqua;
-    border-radius: 0.8vw;
+    border-radius: 8px;
     position: relative;
     background:transparent;
     transition: 0.3s;
     font-weight: 600;
-    font-size: 1.5vw;
-    letter-spacing:0.3vw;
-    height: 4.7vw;
-    margin-top: -2vw;
+    font-size: 1rem;
+    letter-spacing:3.3px;
+    height: 52px;
+    margin-top: -20px;
+}
+
+@media(max-width:900px){
+    .botaoGit{
+        margin-left: 35vw;
+        padding: 3px 5px 5px;
+        width: 120px;
+        border: 0.2vw solid aqua;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        letter-spacing: 3.3px;
+        height: 32px;
+        margin-top: -40px;
+    }
+
+    .botaoLink{
+        margin-left: 8.5vw;
+        padding: 3px 5px 5px;
+        width: 120px;
+        border: 0.2vw solid aqua;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        letter-spacing: 3.3px;
+        height: 32px;
+        margin-top: -40px;
+    }
+}
+
+@media(max-width:800px){
+    .botaoGit{
+        margin-left: 32vw;
+    }
+}
+
+@media(max-width:650px){
+    .botaoGit{
+        margin-left: 30vw;
+        margin-top: -5px;
+    }
+    .botaoLink{
+        margin-top: -5px;
+    }
+}
+
+@media(max-width:600px){
+    .botaoGit{
+        margin-left: 27vw;
+    }
+}
+
+@media(max-width:500px){
+    .botaoGit{
+        margin-left: 24vw;
+    }
+}
+
+@media(max-width:450px){
+    .botaoGit{
+        margin-left: 18vw;
+    }
+}
+
+@media(max-width:300px){
+    .botaoGit{
+        margin-left: 17vw;
+        padding: 0.3vw 0.1vw 0.5vw;
+        width: 30vw;
+        border-radius: 0.8vw;
+        font-size: 4vw;
+        height: 14vw;
+        margin-top: 5vw;
+    }
+    
+    .botaoLink{
+        margin-left: 8vw;
+        padding: 0.3vw 0.1vw 0.5vw;
+        width: 30vw;
+        border-radius: 0.8vw;
+        font-size:4vw;
+        height: 14vw;
+        margin-top: 5vw;
+    }
 }
 
 .botaoGit:hover{
@@ -334,14 +435,38 @@ body{
     animation: move infinite forwards 4s;
 }
 
+
+/*Logo dos botões - https://gabrielaguaru.github.io/*/
 .gitLogo{
     width: 2.5vw;
     height: 2.5vw;
 }
 
 .linkLogo{
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+@media(max-width:480px){
+    .gitLogo{
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .linkLogo{
+        width: 4vw;
+        height: 4vw;
+    }
+}
+
+@media(max-width:300px){
+    .gitLogo{
+        display: none;
+    }
+    
+    .linkLogo{
+        display: none;
+    }
 }
 
 p {
@@ -356,16 +481,46 @@ p {
 /*Scroll efeito - https://gabrielaguaru.github.io/*/
 .scroll{
     position: absolute;
-    margin-top: 5vw;
-    margin-left: 45vw;
+    margin-top: 80px;
+    margin-left: 495px;
     font-weight: bold;
-    font-size: 1.58vw;
-    letter-spacing: 0.19vw;
+    font-size: 20px;
+    letter-spacing: 2.2px;
 }
 
 @media(max-width:900px){
     .scroll{
-        margin-left: 47vw;
+        margin-top: 5vw;
+        margin-left: 46vw;
+    }
+}
+
+@media(max-width:650px){
+    .scroll{
+        margin-left: 44vw;
+        font-size: 3vw;
+    }
+}
+
+@media(max-width:550px){
+    .scroll{
+        margin-top: 25vw;
+        margin-left: 43vw;
+        font-size: 3vw;
+    }
+}
+
+@media(max-width:400px){
+    .scroll{
+        margin-top: 40vw;
+        margin-left: 43vw;
+    }
+}
+
+@media(max-width:300px){
+    .scroll{
+        margin-top: 60vw;
+        margin-left: 35vw;
     }
 }
 
@@ -403,4 +558,35 @@ p {
 
 ::selection {
     background-color: rgb(51, 111, 164);
+}
+
+
+
+
+/*Segunda página*/
+
+#sobre{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: #151515;
+    z-index: 0;
+    position: relative;
+}
+
+@media(max-width:900px){
+    #sobre{
+        flex-direction: column;
+        padding: 15% 0;
+        align-items: center;  
+    }
+}
+
+.descricao{
+    margin-top: 5%;
+    color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    margin-left:3vw;
 }

@@ -182,7 +182,7 @@ body{
     box-shadow: 4px 4px 16px 16px #00ffff80; 
     height: 190px; 
     width: 510px;
-    overflow: hidden;   
+    overflow: hidden; 
 }
 
 .textBox:hover{
@@ -197,23 +197,25 @@ body{
     letter-spacing: 3.3px;
     margin-left: 45px;
     line-height: 90px;
-    animation: 
-    typing 5s steps(40, end);
 }
 
 .profissao{
-    display: inline;
+    display: inline-block;
     text-transform: uppercase;
     color: #ffffff;
+    height: 20px;
     font: 700 normal 18px 'tahoma';
     letter-spacing: 3.3px;
     margin-left: 50px;
     text-transform: uppercase; 
+    animation: 
+    typing 3s steps(60, end);
+    overflow: hidden; 
 }
 
- @keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
 }
 
 @media(max-width:900px){
@@ -231,6 +233,7 @@ body{
     .profissao{
         font: 700 normal 10px 'tahoma';
         margin-left: 20px;
+        height: 15px;
     }
 }
 
@@ -252,6 +255,7 @@ body{
         font: 700 normal 3.5vw 'tahoma';
         letter-spacing: 0.3vw;
         margin-left: 3vw;
+        height: 10px;
     }
 }
 
@@ -469,7 +473,7 @@ body{
     }
 }
 
-p {
+p{
     display: block;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-block-start: 1vw;

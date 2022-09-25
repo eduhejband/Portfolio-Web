@@ -149,6 +149,7 @@ a{
   /* Primeira página - https://github.com/eduhejband/VueQuasar/blob/master/Vue/Vue/src/pages/IndexPage.vue */
 #home{
     height: 700px;
+    background-color: black;
 }
 
 .homeLayout{
@@ -169,7 +170,6 @@ body{
 	justify-content: center;
 	align-items: center;
     overflow-x: hidden;
-    background-color: black;
 }
 
 .textBox{
@@ -206,7 +206,7 @@ body{
     height: 20px;
     font: 700 normal 18px 'tahoma';
     letter-spacing: 3.3px;
-    margin-left: 50px;
+    margin-left: 52px;
     text-transform: uppercase; 
     animation: 
     typing 3s steps(60, end);
@@ -451,6 +451,7 @@ body{
     height: 2vw;
 }
 
+
 @media(max-width:480px){
     .gitLogo{
         width: 4vw;
@@ -549,6 +550,69 @@ p{
     }
 }
 
+/*Media query para telas maiores que 1200px (a aplicação não será responsiva para telas maiores que 1500px visto que o site é focado para desktops)*/
+
+@media(min-width:1200px){
+
+    #home{
+        height: 55vw;
+    }
+    .textBox{
+        height: 16vw; 
+        width: 30vw; 
+        margin-left: 20%;
+    }
+
+    .nome{
+        font: 700 normal 1.2vw 'tahoma';
+        margin-left: 4vw;
+        line-height: 8vw;
+    }
+
+    .profissao{
+        font: 700 normal 1vw 'tahoma';
+        margin-left: 3.2vw;
+        height: 1vw;
+    }
+
+    #earth{
+        height: 21vw;
+        width:21vw;
+        margin-left: 15%;
+    }
+
+    .botaoGit{
+        margin-left: 24vw;
+        margin-top: 2vw;
+        height: 3vw;
+        width: 9vw;
+        font-size: 0.85vw;
+    }
+
+    .botaoLink{
+        margin-top: 2vw;
+        height: 3vw;
+        width: 9vw;
+        font-size: 0.85vw;
+    }
+
+    .gitLogo{
+        width: 1.8vw;
+        height: 1.8vw;
+    }
+    
+    .linkLogo{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+
+    .scroll{
+        margin-top: 5vw;
+        margin-left: 46vw;
+    }
+    
+}
+
 /*Scroll bar e selection color - https://gabrielaguaru.github.io/*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -570,12 +634,13 @@ p{
 /*Segunda página*/
 
 #sobre{
-    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #151515;
     z-index: 0;
     position: relative;
+    height: 900px;
+    
 }
 
 @media(max-width:900px){
@@ -586,11 +651,28 @@ p{
     }
 }
 
-.descricao{
-    margin-top: 5%;
-    color: white;
+.titulo2{
+    margin-top: 15%;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #00d2df;
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     font-size: 2vw;
     margin-left:3vw;
 }
+
+.apresentacao{
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    margin-left: -3vw;
+    color: #efeaea;
+}
+
+.fotoPerfil{
+    height: 3vw;
+    width: 3vw;
+    margin-top: 5vw;
+    margin-right: 15vw;
+}
+

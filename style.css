@@ -662,11 +662,18 @@ p{
     margin-left:3vw;
 }
 
-.apresentacao{
-    font-size: 1.2vw;
+.endereco{
+    font-size: 2rem;
     margin-top: 3vw;
     margin-left: -3vw;
     color: #efeaea;
+}
+
+.apresentacao{
+    margin-top: 40px;
+    color: white;
+    font-size: 1.5rem;
+    width: 30vw;
 }
 
 .fotoPerfil{
@@ -675,4 +682,46 @@ p{
     margin-top: 5vw;
     margin-right: 15vw;
 }
+
+.botaoEmail{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px 5px;
+    justify-content: space-evenly;
+    width: 170px;
+    border: 0.2vw solid aqua;
+    border-radius: 8px;
+    position: relative;
+    background:transparent;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 3.3px;
+    height: 52px;
+    margin-top: 60px;
+}
+
+.botaoCurriculo{
+    color: white;
+    text-decoration: none;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    padding: 3px 5px 5px;
+    justify-content: space-evenly;
+    width: 170px;
+    border: 0.2vw solid aqua;
+    border-radius: 8px;
+    position: relative;
+    background:transparent;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing:3.3px;
+    height: 52px;
+    margin-top: -52px;
+}
+
 

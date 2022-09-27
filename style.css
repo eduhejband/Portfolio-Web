@@ -552,7 +552,7 @@ p{
 
 /*Media query para telas maiores que 1200px (a aplicação não será responsiva para telas maiores que 1500px visto que o site é focado para desktops)*/
 
-@media(min-width:1200px){
+@media(min-width:1250px){
 
     #home{
         height: 55vw;
@@ -582,7 +582,7 @@ p{
     }
 
     .botaoGit{
-        margin-left: 24vw;
+        margin-left: 23vw;
         margin-top: 2vw;
         height: 3vw;
         width: 9vw;

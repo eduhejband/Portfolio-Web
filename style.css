@@ -565,13 +565,13 @@ p{
 
     .nome{
         font: 700 normal 1.2vw 'tahoma';
-        margin-left: 4vw;
+        margin-left: 3.5vw;
         line-height: 8vw;
     }
 
     .profissao{
         font: 700 normal 1vw 'tahoma';
-        margin-left: 3.2vw;
+        margin-left: 2.7vw;
         height: 1vw;
     }
 

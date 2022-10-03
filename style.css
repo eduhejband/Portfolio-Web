@@ -211,6 +211,7 @@ body{
 
 /*Holograma da Terra - https://codepen.io/pedroo_andre/pen/KKZmNPK*/
 #earth {
+    margin-right: 3%;
     margin-top: 8%;
     margin-left: 15%;
     position: relative;
@@ -736,4 +737,26 @@ p{
     letter-spacing:3.3px;
     height: 52px;
     margin-top: -52px;
+}
+
+.emailLogo{
+    width: 30px;
+    height: 30px;
+}
+
+.curriculoLogo{
+    width: 30px;
+    height: 30px;
+}
+
+.botaoEmail:hover{
+    background: linear-gradient( -45deg, rgba(147, 88, 247, 1), rgb(3, 95, 100) );
+    background-size: 400%;
+    animation: move infinite forwards 4s;
+}
+
+.botaoCurriculo:hover{
+    background: linear-gradient( -45deg, rgba(147, 88, 247, 1), rgb(3, 95, 100) );
+    background-size: 400%;
+    animation: move infinite forwards 4s;
 }

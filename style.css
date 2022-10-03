@@ -566,7 +566,7 @@ p{
     justify-content: space-evenly;
     background-color: #151515;
     z-index: 0;
-    position: relative;
+    position:relative;
     height: 900px;
     
 }
@@ -587,13 +587,12 @@ p{
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     font-size: 2vw;
-    margin-left:3vw;
 }
 
 .endereco{
-    font-size: 2rem;
+    font-size: 1.2em;
     margin-top: 3vw;
-    margin-left: -3vw;
+    margin-left: 0;
     color: #efeaea;
 }
 
@@ -601,15 +600,102 @@ p{
     margin-top: 40px;
     color: white;
     font-size: 1.5rem;
-    width: 30vw;
+    width: 600px;
 }
 
 .fotoPerfil{
-    height: 3vw;
-    width: 3vw;
-    margin-top: 5vw;
-    margin-right: 15vw;
+    position: relative;
+    display: block;
+    height: 350px;
+    width: 350px;
+    margin-top: 180px;
+    margin-left: -40px;
+    border:8px inset #29aed2;
+	padding:15px;
+	background: #000000;
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin-top: 15%;
+    background-color: #91bbed;
+    margin-left: 25%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    margin-top:-15px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #myInput{
+    width: 175px;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 .botaoEmail{
     color: white;
@@ -651,5 +737,3 @@ p{
     height: 52px;
     margin-top: -52px;
 }
-
-

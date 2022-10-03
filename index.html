@@ -74,22 +74,43 @@
 
             <!-- Segunda página-->
             <section class="secundario" id="sobre">
+                <div>
+                    <img class = "fotoPerfil"src="me.jpg" alt="">
+                </div>
 
                 <div class="descricao">
                     <div class="titulo2">
                         <h1>Sobre mim</h1>
                     </div>
                     <div class="endereco">
-                        <h2>Rio de Janeiro, Rio de Janeiro, Brasil</h2>
+                        <h2>Rio de Janeiro, RJ, Brasil</h2>
                     </div>
                     <div class="apresentacao">
-                        <p>Graduado em Engenharia Mecatrônica e atuante dentro da área de Desenvolvimento de Sistemas, 
-                            buscando sempre novos conhecimentos dentro da área de TI, também possuo experiência na atuação de
-                            dispositivos eletrônicos voltados para a automação.</p>
+                        <p>  Graduado em Engenharia Mecatrônica, atuo como Desenvolvedor Full Stack sempre buscando melhorias e
+                            novas experiências, afim de acumular conhecimento para projetos futuros onde busco não só a evolução
+                            pessoal, mas também poder contribuir para o futuro da sociedade, onde possamos em larga escala alcançar 
+                            cada vez mais um desenvolvimento sustentável, e uma melhor qualidade de vida para todos utilizando da tecnologia.
+                        </p>
                     </div>
+                    <div id="myModal" class="modal">
 
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <label for="">
+                                <input type="text" value="eduardohejband@gmail.com" id="myInput">
+                            </label>
+                            <div class="tooltip">
+                                <button onclick="myFunction()" onmouseout="outFunc()">
+                                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                Copy text
+                                </button>
+                            </div>
+                        </div>
+                      
+                    </div>
                     <div class="botoes2">
-                        <a class="botaoEmail" href="https://github.com/eduhejband">
+                        <a class="botaoEmail" id="myBtn">
                             <img class= "emailLogo" src="" alt="">
                             <p>Email</p>
                         </a>
@@ -100,10 +121,6 @@
                         </a>        
                     </div>
     
-                </div>
-
-                <div class="fotoPerfil">
-                    <img src="me.jpg" alt="">
                 </div>
 
             </section>

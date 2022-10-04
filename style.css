@@ -164,7 +164,7 @@ body{
 }
 
 .textBox{
-    display: inline-block;
+    display: flex;
     align-items: center;
     background: transparent;
     margin-top: 10%;
@@ -173,7 +173,10 @@ body{
     box-shadow: 4px 4px 16px 16px #00ffff80; 
     height: 200px; 
     width: 500px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden; 
+    flex-wrap: wrap;
 }
 
 .textBox:hover{
@@ -181,13 +184,16 @@ body{
 }
 
 .nome {
-    display: inline;
+    display: inline-block;
     text-transform: uppercase;
     color: #f7e7e7;
-    font: 700 normal 1.4em 'tahoma'; 
+    font: 700 normal 1.5em 'tahoma'; 
     letter-spacing: 3.3px;
-    padding-left: 12%;
     line-height: 90px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
 }
 
 .profissao{
@@ -197,7 +203,6 @@ body{
     height: 22px;
     font: 700 normal 1.2em 'tahoma';
     letter-spacing: 3.3px;
-    padding-left: 8%;
     text-transform: uppercase; 
     animation: 
     typing 3s steps(60, end);
@@ -366,16 +371,13 @@ p{
         margin-left: 20%;
     }
 
-    .nome{
-        font: 700 normal 1.4em 'tahoma';
-        padding-left: 18.5%;
+    .nome {
+        font: 700 normal 1.7em 'tahoma'; 
         line-height: 135px;
     }
-
+    
     .profissao{
-        font: 700 normal 1.2em 'tahoma';
-        padding-left: 15%;
-        height: 1.2em;
+        font: 700 normal 1.4em 'tahoma'; 
     }
 
     #earth{
@@ -417,7 +419,7 @@ p{
     }  
 }
 
-@media(max-width:960px){
+@media(max-width:1000px){
     .homeLayout{
         flex-direction: column; 
         align-items: center;
@@ -426,19 +428,19 @@ p{
     .textBox{
         margin-top: 100px;
         height: 200px; 
-        width: 300px; 
+        width: 350px;
+        padding: 0; 
     }
 
-    .nome{
-        font: 700 normal 0.85em'tahoma';
-        padding-left: 7%;
-        line-height: 100px;
+    .nome {
+        margin-top: 15%;
+        font: 700 normal 0.9em 'tahoma'; 
+        line-height: 90px;
     }
-
+    
     .profissao{
-        font: 700 normal 0.65em 'tahoma';
-        padding-left: 4%;
-        height: 1.3em;
+        font: 700 normal 0.8em 'tahoma'; 
+        height:15px;
     }
 
     #earth{
@@ -494,17 +496,14 @@ p{
         align-items: center;
     }
 
-    .nome{
-        font: 700 normal 3.5vw 'tahoma';
-        letter-spacing: 0.3vw;
-        margin-left: 5.5vw;
-        line-height: 40vw;
+    .nome {
+        font: 700 normal 3vw 'tahoma'; 
+        line-height: 90px;
     }
-
+    
     .profissao{
-        font: 700 normal 3vw 'tahoma';
-        letter-spacing: 0.3vw;
-        margin-left: 4.5vw;
+        font: 700 normal 2.5vw 'tahoma'; 
+        height:8px;
     }
 
     .botaoGit{

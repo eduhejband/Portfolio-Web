@@ -192,7 +192,6 @@ body{
     line-height: 90px;
     font-weight: 700;
     letter-spacing: 1px;
-    text-transform: capitalize;
     margin: 0px;
 }
 
@@ -476,10 +475,10 @@ p{
     }
     
     .linkLogo{
-        width: 15px;
-        height: 15px;
-        margin-right: 5%;
-        margin-left: 10%;
+        width: 13px;
+        height: 13px;
+        margin-right: 8%;
+        margin-left: 5%;
     }
 
     .scroll{
@@ -503,7 +502,7 @@ p{
     
     .profissao{
         font: 700 normal 2.5vw 'tahoma'; 
-        height:8px;
+        height:10px;
     }
 
     .botaoGit{
@@ -759,3 +758,4 @@ p{
     background-size: 400%;
     animation: move infinite forwards 4s;
 }
+

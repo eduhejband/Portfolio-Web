@@ -367,7 +367,7 @@ p{
     .textBox{
         height: 300px; 
         width: 600px; 
-        margin-left: 20%;
+        margin-left: 15%;
     }
 
     .nome {
@@ -382,12 +382,12 @@ p{
     #earth{
         height: 350px;
         width:350px;
-        margin-left: 12%;
+        margin-left: 17%;
         margin-right: 3%;
     }
 
     .botaoGit{
-        margin-left: 22%;
+        margin-left: 17%;
         margin-top: 70px;
         height: 70px;
         width: 200px;
@@ -828,5 +828,7 @@ p{
         width: 40px;
         height: 40px;
     }
+
 }
+
 

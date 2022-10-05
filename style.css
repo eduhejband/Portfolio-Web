@@ -585,12 +585,12 @@ p{
     -webkit-text-stroke-color: #00d2df;
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
-    font-size: 2vw;
+    font-size: 39px;
 }
 
 .endereco{
     font-size: 1.2em;
-    margin-top: 3vw;
+    margin-top: 58.5px;
     margin-left: 0;
     color: #efeaea;
 }
@@ -758,4 +758,5 @@ p{
     background-size: 400%;
     animation: move infinite forwards 4s;
 }
+
 

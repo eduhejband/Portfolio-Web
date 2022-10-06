@@ -566,49 +566,46 @@ p{
     background-color: #151515;
     z-index: 0;
     position:relative;
-    height: 900px;
-    
-}
-
-@media(max-width:900px){
-    #sobre{
-        flex-direction: column;
-        padding: 15% 0;
-        align-items: center;  
-    }
+    height: 600px;   
 }
 
 .titulo2{
-    margin-top: 15%;
+    margin-top: 10%;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #00d2df;
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
-    font-size: 39px;
+    font-size: 25px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .endereco{
     font-size: 1.2em;
-    margin-top: 58.5px;
+    margin-top: 40px;
     margin-left: 0;
     color: #efeaea;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .apresentacao{
     margin-top: 40px;
     color: white;
-    font-size: 1.5rem;
-    width: 600px;
+    font-size: 1.3rem;
+    width: 50vw;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .fotoPerfil{
     position: relative;
-    display: block;
-    height: 350px;
-    width: 350px;
-    margin-top: 180px;
-    margin-left: -40px;
+    display: flex;
+    height: 275px;
+    width: 275px;
+    margin-top: 150px;
+    margin-left: 10%;
     border:8px inset #29aed2;
 	padding:15px;
 	background: #000000;
@@ -714,12 +711,13 @@ p{
     letter-spacing: 3.3px;
     height: 52px;
     margin-top: 60px;
+    margin-left: 5%;
 }
 
 .botaoCurriculo{
     color: white;
     text-decoration: none;
-    margin-left: 300px;
+    margin-left: 250px;
     display: flex;
     align-items: center;
     padding: 3px 5px 5px;
@@ -830,6 +828,79 @@ p{
     }
 
 }
+
+@media(max-width:1000px){
+    #sobre{
+        flex-direction: column;
+        align-items: center;  
+        height: 900px;
+    }
+
+    .titulo2{
+        font-size: 21px;
+        margin-top: 5%;
+        -webkit-text-stroke-width: 1.5px;
+        margin-left: 38%;
+    }
+
+    .endereco{
+        font-size: 1.0rem;
+        margin-top: 7%;
+        margin-left: 27%;
+        color: #efeaea;
+    }
+    
+    .apresentacao{
+        margin-top: 5%;
+        color: white;
+        font-size: 1.2rem;
+        width: 47vw;
+        margin-right: 5%;
+        margin-left: 10%;
+    }
+    
+    .fotoPerfil{
+        display: flex;
+        height: 300px;
+        width: 300px;
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+    
+    .botoes2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botaoEmail{
+        height: 50px;
+        width: 100px;
+        font-size: 8px;
+        margin-left: 26%;
+    }
+
+    .botaoCurriculo{
+        height: 50px;
+        width: 100px;
+        font-size: 8px;
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+    
+    .emailLogo{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .curriculoLogo{
+        width: 20px;
+        height: 20px;
+        margin-right: 8%;
+        margin-left: 5%;
+    }
+}
+
+
 
 
 

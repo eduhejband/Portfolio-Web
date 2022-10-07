@@ -839,58 +839,70 @@ p{
 
     .titulo2{
         font-size: 21px;
-        margin-top: 5%;
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+        margin-left: 10%;
         -webkit-text-stroke-width: 1.5px;
-        margin-left: 38%;
     }
 
     .endereco{
         font-size: 1.0rem;
-        margin-top: 7%;
-        margin-left: 27%;
+        margin: 0;
         color: #efeaea;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 10%;
     }
     
     .apresentacao{
-        margin-top: 30px;
+        display: flex;
         color: white;
-        font-size: 1.3rem;
-        width: 52vw;
+        font-size: 1.3rem; 
+        width: 50%;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 30%;
         margin-right: 5%;
-        margin-left: 15%;
+        text-align: center;
     }
     
     .fotoPerfil{
         display: flex;
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
         margin-top: 70px;
-        margin-left: 10%;
         padding: 0;
-        margin-right: 10%;
+        margin-left: 20%;
+        margin-right: 50%;
     }
     
     .botoes2{
         display: flex;
         flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
     }
 
     .botaoEmail{
         height: 50px;
         width: 100px;
         font-size: 8px;
-        margin-left: 12vw;
-        margin-top: 30px;
+        margin-top: 50px;
         margin-bottom: 10%;
+        margin-left: 12vw;
     }
 
     .botaoCurriculo{
         height: 50px;
         width: 100px;
         font-size: 8px;
-        margin-top: 30px;
+        margin-top: 50px;
         margin-left: 80px;
         margin-bottom: 10%;
+        margin-right: 5%;
     }
     
     .emailLogo{
@@ -905,6 +917,8 @@ p{
         margin-left: 5%;
     }
 }
+
+
 
 
 

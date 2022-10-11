@@ -1007,14 +1007,6 @@ p{
 
 
 
-
-
-.terceiro{
-    background: #000000;
-    font-family: "Lato", sans-serif;
-    height: 1000px;
-}
-
 .tituloTerceiro{
     text-align: center;
     color: transparent;
@@ -1024,77 +1016,80 @@ p{
     letter-spacing: 1px;
     font-size: 29px;
     margin: 20px 0;
-    margin-top:5%;
+    margin-bottom:30%;
+    margin-left: 30%;
 }
 
-.warpper {
-    margin-top:5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .tab {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 0px 2px;
-    background: #32557f;
-    display: inline-block;
-    color: #fff;
-    border-radius: 3px 3px 0px 0px;
-  }
-  
-  .panels {
-    background: #fff;
-    min-height: 200px;
-    width: 100%;
-    max-width: 700px;
-    height: 500px;
-    border-radius: 3px;
-    overflow: hidden;
-    padding: 20px;
-  }
-  
-  .panel {
-    display: none;
-    animation: fadein 0.8s;
-  }
-  
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .panel-title {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .radio {
-    display: none;
-  }
-  
-  #one:checked ~ .panels #one-panel,
-  #two:checked ~ .panels #two-panel,
-  #three:checked ~ .panels #three-panel,
-  #four:checked ~ .panels #four-panel {
-    display: block;
-  }
-  
-  #one:checked ~ .tabs #one-tab,
-  #two:checked ~ .tabs #two-tab,
-  #three:checked ~ .tabs #three-tab,
-  #four:checked ~ .tabs #four-tab  {
-    background: #fff;
-    color: #000;
-    border-top: 3px solid #32557f;
-  }
 
-  body{
-    background-color: #000;
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 500px;
+}
+ 
+.tabs label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background-color: pink;
+  font-weight: bold;
+  transition: background ease 0.3s;
+}
+ 
+.tabs .tab {
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  padding: 20px;
+  box-shadow: -10px 10px 0px 0px black;
+}
+ 
+.tabs input[type="radio"] {
+  display: none;
+}
+ 
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+ 
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+ 
+@media (max-width: 465px) {
+  .tabs .tab,
+  .tabs label {
+   order: initial;
   }
+ 
+  .tabs label {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+ 
+.terceiro {
+  background: rgb(0, 0, 0);
+  height: 700px;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 

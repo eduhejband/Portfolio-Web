@@ -1017,15 +1017,15 @@ p{
     font-size: 29px;
     margin: 20px 0;
     margin-bottom:30%;
-    margin-left: 30%;
 }
 
 
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  height: 300px;
-  width: 500px;
+  height: 400px;
+  width: 80%;
+  
 }
  
 .tabs label {
@@ -1034,11 +1034,16 @@ p{
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
-  margin-right: 0.2rem;
+  margin-right: 0;
   cursor: pointer;
-  background-color: pink;
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-color: aqua;
+  
   font-weight: bold;
   transition: background ease 0.3s;
+  width: 25%;
 }
  
 .tabs .tab {
@@ -1048,7 +1053,8 @@ p{
   height: 100%;
   display: none;
   padding: 1rem;
-  background: #fff;
+  background: rgb(0, 0, 0);
+  color: white;
   padding: 20px;
   box-shadow: -10px 10px 0px 0px black;
 }
@@ -1058,9 +1064,15 @@ p{
 }
  
 .tabs input[type="radio"]:checked + label {
-  background: #fff;
+  background: linear-gradient( -45deg, rgb(38, 142, 240), rgb(3, 95, 100) );
+  color: white;
 }
- 
+
+.tabs input[type="radio"]:hover + label {
+    background: linear-gradient( -45deg, rgb(38, 142, 240), rgb(3, 95, 100) );
+    color: white;
+  }
+
 .tabs input[type="radio"]:checked + label + .tab {
   display: block;
 }
@@ -1075,6 +1087,26 @@ p{
     width: 100%;
     margin-left: 50px;
   }
+}
+
+.dwith{
+    height: 35px;
+    width: 100px;
+}
+
+.sertel{
+    height: 30px;
+    width:100px;
+}
+
+.guarei{
+    height:40px;
+    width: 150px;
+}
+
+.facens{
+    height:40px;
+    width: 130px;
 }
  
 .terceiro {

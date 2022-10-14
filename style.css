@@ -1007,7 +1007,35 @@ p{
 
 
 
+.terceiro {
+    background: rgb(0, 0, 0);
+    height: 700px;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.tituloSecao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:600px;
+    position: absolute;
+}
+
 .tituloTerceiro{
+    display:center;
     text-align: center;
     color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -1015,17 +1043,22 @@ p{
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     font-size: 29px;
-    margin: 20px 0;
-    margin-bottom:30%;
+    margin: 20px 0; 
 }
 
-
+.corpoSecao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
 .tabs {
   display: flex;
   flex-wrap: wrap;
   height: 400px;
-  width: 80%;
-  
+  width: 80%; 
 }
  
 .tabs label {
@@ -1090,7 +1123,7 @@ p{
 }
 
 .dwith{
-    height: 35px;
+    height: 30px;
     width: 100px;
 }
 
@@ -1100,28 +1133,15 @@ p{
 }
 
 .guarei{
-    height:40px;
+    height:30px;
     width: 150px;
 }
 
 .facens{
-    height:40px;
+    height:30px;
     width: 130px;
 }
  
-.terceiro {
-  background: rgb(0, 0, 0);
-  height: 700px;
-  box-sizing: border-box;
-  padding-top: 10vh;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  max-width: 100%;
-  margin: 0 auto;
-  font-size: 110%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
 

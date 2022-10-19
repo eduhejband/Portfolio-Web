@@ -1123,25 +1123,30 @@ p{
 }
 
 .dwith{
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
 }
 
 .sertel{
-    height: 30px;
-    width:100px;
+    height: 40px;
+    width:180px;
 }
 
 .guarei{
-    height:30px;
-    width: 150px;
+    width: 200px;
+    height: 60px;
 }
 
 .facens{
-    height:30px;
-    width: 130px;
+    width: 200px;
+    height: 60px;
 }
+
  
-
-
-
+.titulosTab{
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}

@@ -1009,10 +1009,10 @@ p{
 
 .terceiro {
     background: rgb(0, 0, 0);
-    height: 700px;
+    height: 750px;
     box-sizing: border-box;
     padding-top: 10vh;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     max-width: 100%;
@@ -1150,3 +1150,10 @@ p{
     margin: 1rem auto;
     font-size: 1.5rem;
 }
+
+h3{
+    font-weight: 100;
+}
+
+
+

@@ -1207,37 +1207,44 @@ h3{
 @media(max-width:1000px){
 
     .terceiro {
-        height: 800px;
+        height: 1100px;
       }
       
     
     .tituloSecao{
         margin-bottom:600px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: -400px;
     }
     
     .tituloTerceiro{
         letter-spacing: 1px;
-        font-size: 32px;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 200px;
     }
     
     .dwith{
-        height: 40px;
-        width: 120px;
+        height: 25px;
+        width: 80px;
     }
     
     .sertel{
-        height: 30px;
-        width:150px;
+        height: 20px;
+        width:100px;
     }
     
     .guarei{
-        width: 180px;
-        height: 60px;
+        width: 120px;
+        height: 35px;
     }
     
     .facens{
-        width: 180px;
-        height: 50px;
+        width: 120px;
+        height: 35px;
     }
 
     .titulosTab{
@@ -1246,9 +1253,40 @@ h3{
 
     h3{
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .tituloProfissao{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .dataProfissao{
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 15px;
     }
 }
 
-
-
+@media(max-width:700px){
+    .dwith{
+        height: 3.5vw;
+        width: 10vw;
+    }
+    
+    .sertel{
+        height: 3vw;
+        width:12vw;
+    }
+    
+    .guarei{
+        width: 15vw;
+        height: 4.5vw;
+    }
+    
+    .facens{
+        width: 15vw;
+        height: 4.5vw;
+    }
+}

@@ -767,7 +767,7 @@ p{
 @media(min-width:1300px){
     
     #sobre{
-        height: 800px;
+        height: 850px;
     }
 
     .titulo2{
@@ -1009,7 +1009,7 @@ p{
 
 .terceiro {
     background: rgb(0, 0, 0);
-    height: 750px;
+    height: 900px;
     box-sizing: border-box;
     padding-top: 10vh;
     font-family: "Inter", sans-serif;
@@ -1044,6 +1044,7 @@ p{
     letter-spacing: 1px;
     font-size: 29px;
     margin: 20px 0; 
+    margin-top:-150px;
 }
 
 .corpoSecao{
@@ -1053,6 +1054,7 @@ p{
     align-items: center;
     justify-content: center;
     position: absolute;
+    margin-top:-200px;
 }
 .tabs {
   display: flex;
@@ -1123,23 +1125,23 @@ p{
 }
 
 .dwith{
-    height: 40px;
-    width: 120px;
+    height: 30px;
+    width: 100px;
 }
 
 .sertel{
-    height: 40px;
-    width:180px;
+    height: 30px;
+    width:160px;
 }
 
 .guarei{
-    width: 200px;
-    height: 60px;
+    width: 160px;
+    height: 50px;
 }
 
 .facens{
-    width: 200px;
-    height: 60px;
+    width: 160px;
+    height: 40px;
 }
 
  
@@ -1153,6 +1155,99 @@ p{
 
 h3{
     font-weight: 100;
+    font-size: 1.3rem;
+}
+
+@media(min-width:1300px){
+
+    .terceiro {
+        height: 800px;
+      }
+      
+    
+    .tituloSecao{
+        margin-bottom:600px;
+    }
+    
+    .tituloTerceiro{
+        letter-spacing: 1px;
+        font-size: 32px;
+    }
+    
+    .dwith{
+        height: 40px;
+        width: 120px;
+    }
+    
+    .sertel{
+        height: 30px;
+        width:150px;
+    }
+    
+    .guarei{
+        width: 180px;
+        height: 60px;
+    }
+    
+    .facens{
+        width: 180px;
+        height: 50px;
+    }
+
+    .titulosTab{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:1000px){
+
+    .terceiro {
+        height: 800px;
+      }
+      
+    
+    .tituloSecao{
+        margin-bottom:600px;
+    }
+    
+    .tituloTerceiro{
+        letter-spacing: 1px;
+        font-size: 32px;
+    }
+    
+    .dwith{
+        height: 40px;
+        width: 120px;
+    }
+    
+    .sertel{
+        height: 30px;
+        width:150px;
+    }
+    
+    .guarei{
+        width: 180px;
+        height: 60px;
+    }
+    
+    .facens{
+        width: 180px;
+        height: 50px;
+    }
+
+    .titulosTab{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
 }
 
 

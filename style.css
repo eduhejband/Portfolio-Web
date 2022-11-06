@@ -850,7 +850,6 @@ p{
         margin: 0;
         margin-top: 50px;
         margin-left: 10%;
-        -webkit-text-stroke-width: 1.5px;
     }
 
     .endereco{
@@ -1008,7 +1007,6 @@ p{
 
 
 .terceiro {
-   
     width: 100%;
     height: 100%;
     perspective: 900;
@@ -1021,8 +1019,7 @@ p{
     left: 50%;
     transform: translate(-50%, 0);
     background-color: black;
-    padding: 30px;
-  
+    padding: 30px; 
   }
   
   .tituloSecao{
@@ -1043,10 +1040,11 @@ p{
     -webkit-text-stroke-color: #00d2df;
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
-    font-size: 29px;
     margin: 20px 0;
     margin-top: 20px;
-   
+    font-size: 25px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .corpoTerceiro{
@@ -1087,12 +1085,12 @@ p{
 
 .terceiroExTitulo{
     color: aqua;
-    font-size: 29px;
+    font-size: 25px;
 }
 
 .terceiroExDescricao{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
   .listaEx{
@@ -1160,20 +1158,89 @@ p{
     border-bottom: 3px dotted #dce7eb;
 }
 
+
 .dwith{
-    height: 40px;
-    width: 120px;
+    height: 30px;
+    width: 100px;
     display: inline-block;
 }
 
 .sertel{
-    height: 30px;
-    width:150px;
+    height: 25px;
+    width:130px;
     display: inline-block;
 }
 
 .facens{
-    width: 180px;
-    height: 50px;
+    width: 120px;
+    height: 35px;
     display: inline-block;
+}
+
+
+@media(min-width:1300px){
+    .tituloTerceiro{
+        font-size: 29px;;
+    }
+
+    .terceiroExTitulo{
+        color: aqua;
+        font-size: 29px;
+    }
+    
+    .terceiroExDescricao{
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .dwith{
+        height: 40px;
+        width: 120px;
+        display: inline-block;
+    }
+    
+    .sertel{
+        height: 30px;
+        width:150px;
+        display: inline-block;
+    }
+    
+    .facens{
+        width: 180px;
+        height: 50px;
+        display: inline-block;
+    }
+}
+
+@media(max-width:1000px){
+    
+    .tituloTerceiro{
+        font-size: 24px;
+    }
+
+    .terceiroExTitulo{
+        font-size: 21px;
+        margin: 0;
+    }
+
+    .terceiroExDescricao{
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:400px){
+
+    .tituloTerceiro{
+        font-size: 21px;
+    }
+
+    .terceiroExTitulo{
+        font-size: 19px;
+    }
+
+    .terceiroExDescricao{
+        color: white;
+        font-size: 1.1rem;
+    }
 }

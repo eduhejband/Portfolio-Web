@@ -102,7 +102,7 @@ function outFunc() {
 }
 
 
-
+// Accordion JavaScript
 function slide(link) {
   
   var down = function (callback, time) {

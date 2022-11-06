@@ -1008,23 +1008,24 @@ p{
 
 
 .terceiro {
-    background: rgb(0, 0, 0);
-    height: 900px;
-    box-sizing: border-box;
-    padding-top: 10vh;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 110%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+    width: 100%;
+    height: 100%;
+    perspective: 900;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Titillium Web", sans-serif;
+    min-height: 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: black;
+    padding: 30px;
+  
   }
   
-
-.tituloSecao{
+  .tituloSecao{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1043,250 +1044,136 @@ p{
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     font-size: 29px;
-    margin: 20px 0; 
-    margin-top:-150px;
+    margin: 20px 0;
+    margin-top: 20px;
+   
 }
 
-.corpoSecao{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    margin-top:-200px;
+.corpoTerceiro{
+    margin-top: 120px;
 }
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  height: 400px;
-  width: 80%; 
-}
- 
-.tabs label {
-  order: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2rem;
-  margin-right: 0;
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  border-style: solid;
-  border-color: aqua;
+
+  .transition, ul li i:before, ul li i:after, p {
+    transition: all 0.25s ease-in-out;
+  }
   
-  font-weight: bold;
-  transition: background ease 0.3s;
-  width: 25%;
-}
- 
-.tabs .tab {
-  order: 9;
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-  display: none;
-  padding: 1rem;
-  background: rgb(0, 0, 0);
-  color: white;
-  padding: 20px;
-  box-shadow: -10px 10px 0px 0px black;
-}
- 
-.tabs input[type="radio"] {
-  display: none;
-}
- 
-.tabs input[type="radio"]:checked + label {
-  background: linear-gradient( -45deg, rgb(38, 142, 240), rgb(3, 95, 100) );
-  color: white;
+  .no-select, h2 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (max-width: 550px) {
+    .terceiro {
+      box-sizing: border-box;
+      transform: translate(0, 0);
+      max-width: 100%;
+      min-height: 100%;
+      margin: 0;
+      left: 0;
+    }
+  }
+  
+  .accordion{
+    
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+   
+  }
+
+.terceiroExTitulo{
+    color: aqua;
+    font-size: 29px;
 }
 
-.tabs input[type="radio"]:hover + label {
-    background: linear-gradient( -45deg, rgb(38, 142, 240), rgb(3, 95, 100) );
+.terceiroExDescricao{
     color: white;
-  }
-
-.tabs input[type="radio"]:checked + label + .tab {
-  display: block;
+    font-size: 1.5rem;
 }
- 
-@media (max-width: 465px) {
-  .tabs .tab,
-  .tabs label {
-   order: initial;
+
+  .listaEx{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 3px dotted #dce7eb;
   }
- 
-  .tabs label {
+  .listaEx:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+  .listaEx:nth-of-type(2) {
+    animation-delay: 0.75s;
+  }
+  .listaEx:nth-of-type(3) {
+    animation-delay: 1s;
+  }
+  .listaEx:last-of-type {
+    padding-bottom: 0;
+  }
+  .listaEx i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+  }
+  .listaEx i:before, ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    width: 3px;
+    height: 9px;
+  }
+  .listaEx i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  .listaEx i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  .listaEx input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
     width: 100%;
-    margin-left: 50px;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
   }
+  .listaEx input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  .listaEx input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  .listaEx input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+  
+  .ultimoItemLista{
+    border-bottom: 3px dotted #dce7eb;
 }
 
 .dwith{
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
+    display: inline-block;
 }
 
 .sertel{
     height: 30px;
-    width:160px;
-}
-
-.guarei{
-    width: 160px;
-    height: 50px;
+    width:150px;
+    display: inline-block;
 }
 
 .facens{
-    width: 160px;
-    height: 40px;
-}
-
- 
-.titulosTab{
-    width: 100%;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin: 1rem auto;
-    font-size: 1.5rem;
-}
-
-h3{
-    font-weight: 100;
-    font-size: 1.3rem;
-}
-
-@media(min-width:1300px){
-
-    .terceiro {
-        height: 800px;
-      }
-      
-    
-    .tituloSecao{
-        margin-bottom:600px;
-    }
-    
-    .tituloTerceiro{
-        letter-spacing: 1px;
-        font-size: 32px;
-    }
-    
-    .dwith{
-        height: 40px;
-        width: 120px;
-    }
-    
-    .sertel{
-        height: 30px;
-        width:150px;
-    }
-    
-    .guarei{
-        width: 180px;
-        height: 60px;
-    }
-    
-    .facens{
-        width: 180px;
-        height: 50px;
-    }
-
-    .titulosTab{
-        font-size: 1.5rem;
-    }
-
-    h3{
-        font-weight: 100;
-        font-size: 1.5rem;
-    }
-}
-
-@media(max-width:1000px){
-
-    .terceiro {
-        height: 1100px;
-      }
-      
-    
-    .tituloSecao{
-        margin-bottom:600px;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        margin-top: -400px;
-    }
-    
-    .tituloTerceiro{
-        letter-spacing: 1px;
-        font-size: 22px;
-        text-align: center;
-        margin-top: 200px;
-    }
-    
-    .dwith{
-        height: 25px;
-        width: 80px;
-    }
-    
-    .sertel{
-        height: 20px;
-        width:100px;
-    }
-    
-    .guarei{
-        width: 120px;
-        height: 35px;
-    }
-    
-    .facens{
-        width: 120px;
-        height: 35px;
-    }
-
-    .titulosTab{
-        font-size: 1.5rem;
-    }
-
-    h3{
-        font-weight: 100;
-        font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .tituloProfissao{
-        font-size: 1.1rem;
-        text-align: center;
-    }
-
-    .dataProfissao{
-        font-size: 1.1rem;
-        text-align: center;
-        padding-top: 15px;
-    }
-}
-
-@media(max-width:700px){
-    .dwith{
-        height: 3.5vw;
-        width: 10vw;
-    }
-    
-    .sertel{
-        height: 3vw;
-        width:12vw;
-    }
-    
-    .guarei{
-        width: 15vw;
-        height: 4.5vw;
-    }
-    
-    .facens{
-        width: 15vw;
-        height: 4.5vw;
-    }
+    width: 180px;
+    height: 50px;
+    display: inline-block;
 }

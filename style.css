@@ -1008,7 +1008,7 @@ p{
 /* Terceira página*/
 .terceiro {
     width: 100%;
-    height: 100%;
+    height: auto;
     perspective: 900;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -1020,6 +1020,7 @@ p{
     transform: translate(-50%, 0);
     background-color: black;
     padding: 30px; 
+    align-items: center;
   }
   
   .tituloSecao{
@@ -1240,4 +1241,20 @@ p{
         color: white;
         font-size: 1.1rem;
     }
+}
+
+/* Gambiarra para ajustar o tamanho da terceira página*/
+.listaHide{
+    visibility: hidden;
+}
+
+
+
+#projetos{
+    display: flex;
+    background-color: #151515;
+    position:relative;
+    height: 400px;  
+    margin-top: -5px; 
+    z-index: -1;
 }

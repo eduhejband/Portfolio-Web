@@ -1042,7 +1042,7 @@ p{
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     margin: 20px 0;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 25px;
     margin-right: 5%;
     margin-left: 5%;
@@ -1050,7 +1050,7 @@ p{
 
 /* Accordion CSS - https://codepen.io/alvarotrigo/pen/qBpBezx*/
 .corpoTerceiro{
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
   .transition, ul li i:before, ul li i:after, p {
@@ -1178,7 +1178,12 @@ p{
 
 @media(min-width:1300px){
     .tituloTerceiro{
-        font-size: 29px;;
+        font-size: 29px;
+        margin-top: 50px;
+    }
+
+    .corpoTerceiro{
+        margin-top: 150px;
     }
 
     .terceiroExTitulo{
@@ -1253,8 +1258,164 @@ p{
 #projetos{
     display: flex;
     background-color: #151515;
-    position:relative;
-    height: 400px;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
     margin-top: -5px; 
     z-index: -1;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+  
+}
+
+.tituloSecaoQuarto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:650px;
+    position: absolute;
+}
+
+.tituloQuarto{
+    display:center;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #00d2df;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.container {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.container .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container .card img {
+    transition: 0.5s;
+}
+
+.container .card h1 {
+    font-size: 2rem;
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .content p {
+    color: #666;
+    transition: 0.5s;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: aqua;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .card:hover {
+    background-color: #2eb3dc;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    border-color: #2e9cdc;
+}
+
+.container .card:hover img {
+    filter: invert(1);
+}
+
+.container .card:hover .content p {
+    color: rgb(0, 0, 0);
+}
+
+.container .card:hover .content a{
+    color:black;
+    background-color: white;
+}
+
+.garden{
+    width: 200px;
+    height: 200px;
+}
+
+.cardText{
+    font-size: 1.2rem;
+}
+
+.tecnologia{
+    font-size: 1.2rem;
+    color: rgb(3, 3, 61) !important;
+}
+
+.botaoCard{
+    font-weight: bold !important;
+}
+
+@media(min-width:1300px){
+
+    .tituloSecaoQuarto{
+        margin-bottom: 750px;
+    }
+
+    .tituloQuarto{
+        font-size: 29px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: -50px;
+    }
+    
+    .container .card {
+        width: 450px;
+    }
+
+}
+
+@media(max-width:1520px) and (min-width:1300px){
+    .tituloSecaoQuarto{
+        margin-bottom: 1300px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 140px;
+    }
+    
 }

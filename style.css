@@ -422,6 +422,7 @@ p{
     .homeLayout{
         flex-direction: column; 
         align-items: center;
+        justify-content: center;
     }
 
     .textBox{
@@ -429,61 +430,68 @@ p{
         height: 200px; 
         width: 350px;
         padding: 0; 
+        margin-right: 5%;
+        margin-left: 5%;   
     }
 
     .nome {
         margin-top: 15%;
-        font: 700 normal 0.9em 'tahoma'; 
+        font: 700 normal 1.0em 'tahoma'; 
         line-height: 90px;
     }
     
     .profissao{
-        font: 700 normal 0.8em 'tahoma'; 
-        height:15px;
+        font: 900 normal 0.9em 'tahoma'; 
+        height:20px;
     }
 
     #earth{
         display: none;
     }
     .botoes{
+        display: flex;
+        flex-direction: row;
         width: 100%;
         align-items: center;
-        flex-direction: row;
-        justify-content: center;
+        justify-content:center;
         margin: 1rem auto;
     }
+
     .botaoGit{
         margin-top: 70px;
-        height: 50px;
-        width: 100px;
-        font-size: 8px;
-        margin-left: 40%;
+        height: 60px;
+        width: 150px;
+        font-size: 0.85rem;
+        margin-left: 28.5%;
+       
     }
 
     .botaoLink{
         margin-top: 70px;
-        height: 50px;
-        width: 100px;
-        font-size: 8px;
-        margin-right: 32%;
-        margin-left: 100px;
+        height: 60px;
+        width: 150px;
+        font-size: 0.75rem;
+        margin-right: 28%;
+        margin-left: 10%;
     }
 
     .gitLogo{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
     
     .linkLogo{
-        width: 13px;
-        height: 13px;
-        margin-right: 8%;
+        width: 25px;
+        height: 25px;
+        margin-right: 5%;
         margin-left: 5%;
+        margin-bottom: 5px;
     }
 
     .scroll{
-        margin-top: 10%;
-        margin-left: 47%;
+        margin-top: 80px;
+        margin-left: 44%;
+        margin-right: 40%;
         font-size: 15px;
     }  
 }
@@ -570,7 +578,7 @@ p{
 }
 
 .titulo2{
-    margin-top: 10%;
+    margin-top: 12%;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #00d2df;
@@ -604,7 +612,7 @@ p{
     display: flex;
     height: 275px;
     width: 275px;
-    margin-top: 150px;
+    margin-top: 160px;
     margin-left: 10%;
     border:8px inset #29aed2;
 	padding:15px;
@@ -849,7 +857,7 @@ p{
         text-align: center;
         margin: 0;
         margin-top: 50px;
-        margin-left: 10%;
+        margin-left: 2.3%;
     }
 
     .endereco{
@@ -858,7 +866,7 @@ p{
         color: #efeaea;
         text-align: center;
         margin-top: 30px;
-        margin-left: 10%;
+        margin-left: 2.3%;
     }
     
     .apresentacao{
@@ -868,7 +876,7 @@ p{
         width: 50%;
         margin: 0;
         margin-top: 20px;
-        margin-left: 30%;
+        margin-left: 26%;
         margin-right: 5%;
         text-align: center;
     }
@@ -879,8 +887,8 @@ p{
         width: 250px;
         margin-top: 70px;
         padding: 0;
-        margin-left: 11vw;
-        margin-right: 10%;
+        margin-left: 4%;
+        margin-right: 71%;
     }
     
     .botoes2{
@@ -888,40 +896,55 @@ p{
         flex-direction: row;
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content:center;
         margin: 1rem auto;
     }
 
     .botaoEmail{
-        height: 50px;
-        width: 100px;
-        font-size: 8px;
-        margin-top: 50px;
-        margin-bottom: 10%;
-        margin-left: 12vw;
+        margin-top: 30px;
+        height: 60px;
+        width: 150px;
+        font-size: 1.0rem;
+        margin-left: 28.5%;
+        margin-bottom: 40px;
+        text-align: center;
+        padding-right: 4%;
+        padding-left: 4%;
     }
 
     .botaoCurriculo{
-        height: 50px;
-        width: 100px;
-        font-size: 8px;
-        margin-top: 50px;
-        margin-left: 80px;
-        margin-bottom: 10%;
-        margin-right: 5%;
+        margin-top: 30px;
+        height: 60px;
+        width: 150px;
+        font-size: 0.8rem;
+        margin-right: 28%;
+        margin-left: 8%;
+        margin-bottom: 40px;
+        padding-left: 1%;
+        padding-right: 1.5%;
     }
     
     .emailLogo{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+        margin-right: 15%;
+        margin-left: 5%;
     }
     
     .curriculoLogo{
-        width: 20px;
-        height: 20px;
-        margin-right: 8%;
+        width: 25px;
+        height: 25px;
+        margin-right: 5%;
         margin-left: 5%;
     }
+}
+
+@media(max-width:750px){
+
+    .botaoCurriculo{
+        margin-left: 5%;
+    }
+
 }
 
 @media(max-width:400px){
@@ -1157,20 +1180,20 @@ p{
 
 
 .dwith{
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 110px;
     display: inline-block;
 }
 
 .sertel{
-    height: 25px;
-    width:130px;
+    height: 30px;
+    width:145px;
     display: inline-block;
 }
 
 .facens{
-    width: 120px;
-    height: 35px;
+    width: 140px;
+    height: 40px;
     display: inline-block;
 }
 
@@ -1222,13 +1245,13 @@ p{
     }
 
     .terceiroExTitulo{
-        font-size: 21px;
+        font-size: 24px;
         margin: 0;
     }
 
     .terceiroExDescricao{
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -1265,7 +1288,7 @@ p{
     z-index: -1;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    height: auto;
+    height: 900px;
   
 }
 
@@ -1275,7 +1298,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom:650px;
+    margin-bottom:65       0px;
     position: absolute;
 }
 
@@ -1288,7 +1311,7 @@ p{
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     margin: 20px 0;
-    margin-top: 20px;
+    margin-bottom: 725px;
     font-size: 25px;
     margin-right: 5%;
     margin-left: 5%;
@@ -1387,7 +1410,11 @@ p{
     font-weight: bold !important;
 }
 
-@media(min-width:1300px){
+@media(min-width:1521px){
+
+    #projetos{
+        height: 800px;
+    }
 
     .tituloSecaoQuarto{
         margin-bottom: 750px;
@@ -1395,11 +1422,13 @@ p{
 
     .tituloQuarto{
         font-size: 29px;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
     .container {
         width: 100%;
-        margin-top: -50px;
+        margin-top: 50px;
     }
     
     .container .card {
@@ -1409,13 +1438,61 @@ p{
 }
 
 @media(max-width:1520px) and (min-width:1300px){
+    
+    #projetos{
+        height: 1600px;
+    }
+    .tituloSecaoQuarto{
+        margin-bottom: 600px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container .card {
+        width: 450px;
+    }
+}
+
+@media(max-width:1059px) and (min-width:820px){
+    
+    #projetos{
+        height: 1600px;
+    }
+    .tituloSecaoQuarto{
+        margin-bottom: 700px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container .card {
+        width: 350px;
+    }
+}
+
+@media(max-width:819px){
+    
+    #projetos{
+        height: 2200px;
+    }
     .tituloSecaoQuarto{
         margin-bottom: 1300px;
     }
 
     .container {
         width: 100%;
-        margin-top: 140px;
     }
-    
+
+    .container .card {
+        width: 350px;
+    }
+
+    .container .card:hover {
+        margin-top: 50px;
+    }
 }

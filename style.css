@@ -1241,7 +1241,9 @@ p{
 @media(max-width:1000px){
     
     .tituloTerceiro{
-        font-size: 24px;
+        font-size: 23px;
+        margin-right: 50%;
+        margin-left: 45%;
     }
 
     .terceiroExTitulo{
@@ -1252,6 +1254,14 @@ p{
     .terceiroExDescricao{
         color: white;
         font-size: 1.4rem;
+    }
+}
+
+@media(max-width:750px){
+    .tituloTerceiro{
+        
+        margin-right: 52%;
+        margin-left: 43%;
     }
 }
 

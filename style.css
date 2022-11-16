@@ -183,6 +183,10 @@ body{
     transform: scale(1.1);
 }
 
+.apresentacaoCelular{
+    display: none;
+}
+
 .nome {
     display: inline-block;
     text-transform: uppercase;
@@ -498,53 +502,81 @@ p{
 
 @media(max-width:400px){
     .textBox{
-        height: 190px; 
-        width: 70vw; 
-        align-items: center;
+       display: none;
     }
 
-    .nome {
-        font: 700 normal 3vw 'tahoma'; 
-        line-height: 90px;
+    .apresentacaoCelular{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        visibility: visible;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: auto;
     }
-    
-    .profissao{
-        font: 700 normal 2.5vw 'tahoma'; 
-        height:10px;
+
+    .nomeCelular{
+        text-align: center;
+        color: aqua;
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+    }
+    .profissaoCelular{
+        display: flex;
+        margin-top: 50px;
+        color: aqua;
+        font-size: 1.5rem;
+    }
+
+    .nomeCelular:hover{
+        color: #6ecaff;
+    }
+
+    .profissaoCelular:hover{
+        color: #6ecaff;
     }
 
     .botaoGit{
-        margin-left: 38vw;
-        padding: center;
-        width: 70vw;
-        border-radius: 0.8vw;
-        font-size: 3vw;
-        height: 14vw;
-        margin-top: 10vw;
+        margin-top: 70px;
+        height: 50px;
+        width: 120px;
+        font-size: 0.75rem;
+        margin-left: 28.5%;
+       
     }
-    
+
     .botaoLink{
-        margin-left: 8vw;
-        padding: center;
-        width: 70vw;
-        border-radius: 0.8vw;
-        font-size:2.5vw;
-        height: 14vw;
-        margin-top: 10vw;
+        margin-top: 70px;
+        height: 50px;
+        width: 120px;
+        font-size: 0.65rem;
+        margin-right: 28%;
+        margin-left: 10%;
     }
 
     .gitLogo{
-        display: none;
+        width: 25px;
+        height: 25px;
     }
     
     .linkLogo{
-        display: none;
+        width: 20px;
+        height: 20px;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 5px;
     }
 
     .scroll{
-        margin-top: 30vw;
-        margin-left: 43vw;
-    }
+        margin-top: 80px;
+        margin-left: 40%;
+        margin-right: 40%;
+        font-size: 15px;
+    }  
+
     }
 
 

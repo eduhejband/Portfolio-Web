@@ -500,6 +500,12 @@ p{
     }  
 }
 
+@media(max-width:500px){
+    .textBox:hover{
+        transform: none;
+    }
+}
+
 @media(max-width:400px){
     .textBox{
        display: none;
@@ -523,20 +529,26 @@ p{
         font-size: 1.8rem;
         font-weight: bold;
         
+        
     }
     .profissaoCelular{
-        display: flex;
+        display: inline-block;
         margin-top: 50px;
         color: aqua;
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
+      
+      }
+    
+    .profissaoCelular::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: width .3s;
     }
-
-    .nomeCelular:hover{
-        color: #6ecaff;
-    }
-
-    .profissaoCelular:hover{
-        color: #6ecaff;
+    .profissaoCelular:hover::after{
+        width: 100%;
     }
 
     .botaoGit{
@@ -606,7 +618,7 @@ p{
     background-color: #151515;
     z-index: 0;
     position:relative;
-    height: 600px;   
+    height: 600px;  
 }
 
 .titulo2{
@@ -976,17 +988,16 @@ p{
     .botaoCurriculo{
         margin-left: 5%;
     }
-
 }
 
 @media(max-width:400px){
 
     .titulo2{
         font-size: 21px;
+        margin-left: 1.5%;
+        margin-right: 1%;
         text-align: center;
-        margin: 0;
         margin-top: 50px;
-        margin-left: 10%;
         -webkit-text-stroke-width: 1.5px;
     }
 
@@ -996,7 +1007,7 @@ p{
         color: #efeaea;
         text-align: center;
         margin-top: 30px;
-        margin-left: 10%;
+        margin-left: 1%;
     }
     
     .apresentacao{
@@ -1006,13 +1017,17 @@ p{
         width: 50%;
         margin: 0;
         margin-top: 20px;
-        margin-left: 30vw;
-        margin-right: 5%;
+        margin-left: 26%;
+        margin-right: 74%;
         text-align: center;
     }
     
     .fotoPerfil{
-        display: none;
+        height: 200px;
+        width: 200px;
+        padding: 0;
+        margin-left: 1%;
+        margin-right: 74%;
     }
     
     .botoes2{
@@ -1023,35 +1038,35 @@ p{
         justify-content: center;
         margin: 1rem auto;
     }
-
+    
     .botaoEmail{
-        margin-left: 14vw;
-        padding: center;
-        width: 25vw;
-        border-radius: 0.8vw;
-        font-size: 3vw;
-        height: 14vw;
-        margin-top: 10vw;
-        font-size: 3vw;
+        margin-top: 70px;
+        height: 50px;
+        width: 120px;
+        font-size: 0.75rem;
+        margin-left: 28.5%;
+       
     }
 
     .botaoCurriculo{
-        margin-left: 8vw;
-        padding: center;
-        width: 25vw;
-        border-radius: 0.8vw;
-        font-size:2.5vw;
-        height: 14vw;
-        margin-top: 10vw;
-        font-size: 2.5vw;
+        margin-top: 70px;
+        height: 50px;
+        width: 120px;
+        font-size: 0.65rem;
+        margin-right: 28%;
+        margin-left: 10%;
     }
-    
+
     .emailLogo{
-        display: none;
+        width: 25px;
+        height: 25px;
     }
     
     .curriculoLogo{
-        display: none;
+        width: 20px;
+        height: 20px;
+        margin-right: 5%;
+        margin-left: 5%;
     }
     
   #myInput{
@@ -1304,12 +1319,12 @@ p{
     }
 
     .terceiroExTitulo{
-        font-size: 19px;
+        font-size: 21px;
     }
 
     .terceiroExDescricao{
         color: white;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 

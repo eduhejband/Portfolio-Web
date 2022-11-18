@@ -102,7 +102,7 @@ function outFunc() {
 }
 
 
-// Accordion JavaScript
+// Accordion JavaScript, passo a passo do funcionamento do Accordion, usando JavaScript, algumas linhas de código estão obsoletas, contudo resolvi não apagar para utilizar como guia no futuro
 function slide(link) {
   
   var down = function (callback, time) {

@@ -1348,7 +1348,7 @@ p{
 }
 
 
-
+/*Quarta página*/
 #projetos{
     display: flex;
     background-color: #151515;
@@ -1388,6 +1388,7 @@ p{
     margin-left: 5%;
 }
 
+/* Para criar os cards, utilizei como guia os dois links cohttps://www.w3schools.com/howto/howto_css_column_cards.asp e https://codepen.io/saviomartin/pen/LYNgqKW*/
 .container {
     width: 1150px;
     padding: 20px;
@@ -1481,6 +1482,7 @@ p{
     font-weight: bold !important;
 }
 
+/*Tornando cards Responsivos*/
 @media(min-width:1521px){
 
     #projetos{

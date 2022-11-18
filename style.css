@@ -533,20 +533,33 @@ p{
     }
     .profissaoCelular{
         display: inline-block;
-        margin-top: 50px;
+        margin-top: 48px;
         color: aqua;
-        font-size: 1.5rem; 
-      
+        font-size: 1.5rem;  
       }
+
+    .nomeCelular::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        transition: width .3s;
+    }
+
+    .nomeCelular:hover::after{
+        width: 100%;
+    }
     
     .profissaoCelular::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: rgb(255, 255, 255);
-    transition: width .3s;
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        transition: width .3s;
     }
+
     .profissaoCelular:hover::after{
         width: 100%;
     }
@@ -1316,6 +1329,7 @@ p{
 
     .tituloTerceiro{
         font-size: 21px;
+        -webkit-text-stroke-width: 1.6px;
     }
 
     .terceiroExTitulo{
@@ -1492,6 +1506,10 @@ p{
         width: 450px;
     }
 
+    .cardText{
+        font-size: 1.3rem;
+    } 
+
 }
 
 @media(max-width:1520px) and (min-width:1300px){
@@ -1511,6 +1529,10 @@ p{
     .container .card {
         width: 450px;
     }
+
+    .cardText{
+        font-size: 1.3rem;
+    } 
 }
 
 @media(max-width:1059px) and (min-width:820px){
@@ -1529,6 +1551,10 @@ p{
 
     .container .card {
         width: 350px;
+    }
+
+    .container .card h1 {
+        font-size: 1.9rem;
     }
 }
 
@@ -1551,5 +1577,39 @@ p{
 
     .container .card:hover {
         margin-top: 50px;
+    }
+
+    .container .card h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media(max-width:400px) {
+    
+    #projetos{
+        height: auto;
+        align-items: baseline;
+    }
+
+    .tituloQuarto{
+        font-size: 23px;
+        -webkit-text-stroke-width: 1.6px;
+    }
+
+    .tituloSecaoQuarto{
+        margin-bottom: 1200px;
+        margin-top: 50px;
+    }
+
+    .container .card {
+        width: 350px;
+    }
+
+    .container .card:hover {
+        margin-top: 50px;
+    }
+
+    .container .card h1 {
+        font-size: 1.7rem;
     }
 }

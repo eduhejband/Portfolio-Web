@@ -1616,3 +1616,42 @@ p{
         font-size: 1.7rem;
     }
 }
+
+
+
+footer{
+    background-color: black;
+    color: #00d2df;
+    z-index: 99999999;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12px;
+    flex-direction: row;
+}
+
+.footerImg{
+    margin-top: 25px;
+    height: 60px;
+    width: 120px;
+    margin-left: 45%;
+    margin-right: 40%;
+    margin-top: 20px;
+}
+
+.footerImg1{
+    margin-top: 25px;
+    height: 60px;
+    width: 180px;
+    margin-top: 20px;
+    margin-left: 43%;
+    margin-right: 40%;
+    margin-bottom: 10px;
+}
+
+
+
+html{
+    background-color: #000;
+    z-index: -999999;
+}

@@ -86,6 +86,12 @@ window.onclick = function(event) {
 }
 
 // "Copy select" da janela
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
 function myFunction() {
   var copyText = document.getElementById("myInput");
   copyText.select();
@@ -95,12 +101,6 @@ function myFunction() {
   var tooltip = document.getElementById("myTooltip");
   tooltip.innerHTML = "Copied.";
 }
-
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
-}
-
 
 // Accordion JavaScript, passo a passo do funcionamento do Accordion, usando JavaScript, algumas linhas de código estão obsoletas, contudo resolvi não apagar para utilizar como guia no futuro
 function slide(link) {

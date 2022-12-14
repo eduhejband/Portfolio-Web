@@ -651,14 +651,14 @@ p{
     font-size: 1.2em;
     margin-top: 40px;
     margin-left: 0;
-    color: #efeaea;
+    color: #c4c4c4;
     margin-right: 5%;
     margin-left: 5%;
 }
 
 .apresentacao{
     margin-top: 40px;
-    color: white;
+    color: #c4c4c4;
     font-size: 1.3rem;
     width: 50vw;
     margin-right: 5%;
@@ -844,7 +844,7 @@ p{
     }
 
     .endereco{
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin-top: 58.5px;
         margin-left: 0;
         color: #efeaea;
@@ -1090,7 +1090,7 @@ p{
 
 
 /* Terceira página*/
-.terceiro {
+#experiencia {
     width: 100%;
     height: auto;
     perspective: 900;
@@ -1151,7 +1151,7 @@ p{
   }
 
   @media (max-width: 550px) {
-    .terceiro {
+    #experiencia {
       box-sizing: border-box;
       transform: translate(0, 0);
       max-width: 100%;
@@ -1484,14 +1484,15 @@ p{
 }
 
 /*Tornando cards Responsivos*/
-@media(min-width:1521px){
+@media(min-width:1510px){
 
     #projetos{
-        height: 800px;
+        height: 900px;
     }
 
     .tituloSecaoQuarto{
-        margin-bottom: 750px;
+        margin-bottom: 46%;
+
     }
 
     .tituloQuarto{
@@ -1502,7 +1503,7 @@ p{
 
     .container {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 80px;
     }
     
     .container .card {
@@ -1515,13 +1516,68 @@ p{
 
 }
 
-@media(max-width:1520px) and (min-width:1300px){
+@media(max-width:1509px) and (min-width:1300px){
     
     #projetos{
         height: 1600px;
     }
     .tituloSecaoQuarto{
-        margin-bottom: 600px;
+        margin-bottom: 700px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container .card {
+        width: 450px;
+    }
+
+    .cardText{
+        font-size: 1.3rem;
+    } 
+}
+
+@media(max-width:1299px) and (min-width:1210px){
+    
+    #projetos{
+        height: 1000px;
+    }
+    .tituloSecaoQuarto{
+        margin-bottom: 100px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .container .card {
+        width: 350px;
+    }
+
+    .cardText{
+        font-size: 1.2rem;
+    }
+    
+    .tecnologia{
+        font-size: 1.2rem;
+    }
+
+    .container .card h1 {
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media(max-width:1209px) and (min-width:1060px){
+    
+    #projetos{
+        height: 1600px;
+    }
+    .tituloSecaoQuarto{
+        margin-bottom: 700px;
     }
 
     .container {
@@ -1541,10 +1597,10 @@ p{
 @media(max-width:1059px) and (min-width:820px){
     
     #projetos{
-        height: 1600px;
+        height: 1700px;
     }
     .tituloSecaoQuarto{
-        margin-bottom: 700px;
+        margin-bottom: 750px;
     }
 
     .container {
@@ -1564,14 +1620,15 @@ p{
 @media(max-width:819px){
     
     #projetos{
-        height: 2200px;
+        height: 2400px;
     }
     .tituloSecaoQuarto{
-        margin-bottom: 1300px;
+        margin-bottom: 1500px;
     }
 
     .container {
         width: 100%;
+        margin-bottom: 100px;
     }
 
     .container .card {
@@ -1587,7 +1644,7 @@ p{
     }
 }
 
-@media(max-width:400px) {
+@media(max-width:410px) {
     
     #projetos{
         height: auto;
@@ -1617,8 +1674,7 @@ p{
     }
 }
 
-
-
+/*Rodapé do site*/
 footer{
     background-color: black;
     color: #00d2df;
@@ -1631,12 +1687,11 @@ footer{
 }
 
 .footerImg{
-    margin-top: 25px;
     height: 60px;
     width: 120px;
-    margin-left: 45%;
-    margin-right: 40%;
-    margin-top: 20px;
+    margin-left: 47%;
+    margin-right: 38%;
+    margin-top: 30px;
 }
 
 .footerImg1{
@@ -1644,14 +1699,112 @@ footer{
     height: 60px;
     width: 180px;
     margin-top: 20px;
-    margin-left: 43%;
-    margin-right: 40%;
+    margin-left: 45.5%;
+    margin-right: 37.5%;
     margin-bottom: 10px;
 }
 
+/*Tornando Rodapé responsivo*/
+@media(min-width:2000px){
+    .footerImg{
+        margin-left: 48%;
+        margin-right: 40%;
+    } 
+    .footerImg1{
+        margin-left: 46.5%;
+        margin-right: 42%;
+    }
+}
 
+@media(max-width:1000px){
+    .footerImg{
+    
+        margin-left: 45%;
+        margin-right: 40%;
+        
+    } 
+    .footerImg1{
+      
+        margin-left: 41%;
+        margin-right: 42%;
+        
+    }
+}
 
+@media(max-width:815px){
+    .footerImg{
+        margin-left: 44%;
+        margin-right: 41%;   
+    }
+    
+    .footerImg1{
+        margin-left: 40%;
+        margin-right: 43%;      
+    }
+}
+
+@media(max-width:700px){
+    .footerImg{
+        margin-left: 42%;
+        margin-right: 43%;   
+    }
+    
+    .footerImg1{
+        margin-left: 38%;
+        margin-right: 43%;      
+    }
+}
+
+@media(max-width:550px){
+    .footerImg{
+        margin-left: 38%;
+        margin-right: 47%;   
+    }
+    
+    .footerImg1{
+        margin-left: 32%;
+        margin-right: 47%;      
+    }
+}
+
+@media(max-width:450px){
+    .footerImg{
+        margin-left: 36%;
+        margin-right: 49%;   
+    }
+    
+    .footerImg1{
+        margin-left: 30%;
+        margin-right: 49%;      
+    }
+}
+
+@media(max-width:400px){
+    .footerImg{
+        margin-left: 34%;
+        margin-right: 51%;   
+    }
+    
+    .footerImg1{
+        margin-left: 28%;
+        margin-right: 51%;      
+    }
+}
+
+/*Gambiarra para consertar o bug dos espaços brancos*/
 html{
     background-color: #000;
     z-index: -999999;
+}
+
+/*Efeito de paginação - site de modelo: https://www.rhuanbello.com/*/
+.effect.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.effect {
+    opacity: 0;
+    transition: .5s;
+    transform: translateX(-10rem);
 }

@@ -1802,7 +1802,8 @@ footer{
 html{
     background-color: #000;
     z-index: -999999;
-    width:fit-content;
+    width:100%;
+    overflow-x: hidden;
 }
 
 /*Efeito de paginação - site de modelo: https://www.rhuanbello.com/*/

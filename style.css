@@ -1018,7 +1018,7 @@ p{
         margin-right: 1%;
         text-align: center;
         margin-top: 50px;
-        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-width: 1.4px;
     }
 
     .endereco{
@@ -1336,7 +1336,7 @@ p{
 
     .tituloTerceiro{
         font-size: 21px;
-        -webkit-text-stroke-width: 1.6px;
+        -webkit-text-stroke-width: 1.4px;
     }
 
     .terceiroExTitulo{
@@ -1660,7 +1660,7 @@ p{
 
     .tituloQuarto{
         font-size: 23px;
-        -webkit-text-stroke-width: 1.6px;
+        -webkit-text-stroke-width: 1.4px;
     }
 
     .tituloSecaoQuarto{

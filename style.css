@@ -1817,7 +1817,7 @@ html{
 
 
 /*Gambiarra para arrumar o bug dos títulos*/
-@media(max-width:800px){
+@media(max-width:1000px){
     .titulo2,.tituloTerceiro, .tituloQuarto{
         letter-spacing: 2px;
         color: aqua;
